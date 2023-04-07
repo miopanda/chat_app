@@ -6,6 +6,7 @@ a {
   text-decoration: none;
 }
 
+
 /* サイドバー --------------------------
 --------------------------------------*/
 
@@ -64,20 +65,114 @@ a {
   
 }
 
+/* トップ */
+
 .chat-top {
   background-color: #ffffff;
   height: 100px;
   padding: 0 40px;
+  display: flex;
+  justify-content: space-between;
 }
+
+.group-name {
+  font-size: 24px;
+  color: #333;
+  margin-top: 36px;
+}
+
+.delete-room {
+  margin-top: 40px;
+}
+
+.delete-room a {
+  border: 1px solid darkred;
+  padding: 20px;
+  color: darkred;
+}
+
+/* チャット一覧画面 */
 
 .chat-middle {
   background-color: #fafafa;
   height: calc(100vh - 190px);
   padding: 46px 40px 0;
+  overflow: scroll;
 }
+
+.chat-content {
+  padding: 10px 0 0 0;
+  /* background-color: lightblue; */
+}
+
+.chat-content-info {
+  display: flex;
+}
+
+.chat-user-name {
+  font-size: 16px;
+  color: #434a54;
+}
+
+.chat-date {
+  padding-left: 10px;
+  color: #999;
+  font-size: 12px;
+}
+
+.chat-content-message {
+  margin: 10px 0 40px;
+}
+
+.message {
+  font-size: 14px;
+  color: #434a54;
+}
+
+
+/* メッセージ投稿画面 */
 
 .chat-bottom {
   background-color: #dddddd;
   height: 90px;
   padding: 20px 40px;
+  display: flex;
 }
+
+.form-input {
+  width: 100%;
+  background-color: white;
+  display: flex;
+}
+
+.form-message {
+  border: none;
+  height: 50px;
+  width: 100%;
+  padding-left: 10px;
+}
+
+.form-image {
+  font-size: 12px;
+  background-color: lightblue;
+  color: white;
+  padding: 12px;
+  width: 60px;
+  margin: 5px 10px;
+  text-align: center;
+}
+
+.hidden {
+  display: none;
+}
+
+.form-submit {
+  background-color: #38aef0;
+  border: none;
+  color: white;
+  font-size: 16px;
+  height: 50px;
+  margin-left: 15px;
+  padding: 0 20px;
+}
+
