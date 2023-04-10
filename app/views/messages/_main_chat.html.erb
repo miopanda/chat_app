@@ -11,25 +11,7 @@
 
 
 <div class="chat-middle">
-  <div class="chat-content">
-    <div class="chat-content-info">
-      <div class="chat-user-name">Tom</div>
-      <div class="chat-date">2023/04/07(fri) 21:30:00</div>
-    </div>
-    <div class="chat-content-message">
-      <div class="message">おはよう</div>
-    </div>
-  </div>
-  <div class="chat-content">
-    <div class="chat-content-info">
-      <div class="chat-user-name">Sim</div>
-      <div class="chat-date">2023/04/07(fri) 23:30:00</div>
-    </div>
-    <div class="chat-content-message">
-      <div class="message">こんちくは</div>
-    </div>
-  </div>
-  
+  <%= render partial: 'message', collection: @messages %>
 </div>
 
 <div class="chat-bottom">
