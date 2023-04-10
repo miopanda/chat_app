@@ -136,6 +136,10 @@ a {
   background-color: #dddddd;
   height: 90px;
   padding: 20px 40px;
+  /* display: flex; */
+}
+
+.form {
   display: flex;
 }
 
